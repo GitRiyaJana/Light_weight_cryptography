@@ -1,0 +1,36 @@
+digraph BoomerangAttack {
+    rankdir=TB;
+    node [shape=box, style=rounded];
+
+    subgraph cluster_E0 {
+        label = "E0 (Forward S-box)";
+        P -> C [label="SBOX"];
+        P_prime -> C_prime [label="SBOX"];
+    }
+
+    subgraph cluster_E1_inv {
+        label = "E1_inv (Inverse S-box)";
+        D -> X [label="INV_SBOX"];
+        D_prime -> X_prime [label="INV_SBOX"];
+    }
+
+    // Differences
+    P -> P_prime [label="α", style=dashed, arrowhead=none, constraint=false];
+    C -> C_prime [label="β", style=dashed, arrowhead=none, constraint=false];
+    D -> D_prime [label="γ", style=dashed, arrowhead=none, constraint=false];
+    X -> X_prime [label="α (returned)", style=dashed, arrowhead=none, constraint=false];
+
+    // Connections
+    C -> D [label="^ γ", style=dotted, arrowhead=normal];
+    C_prime -> D_prime [label="^ γ", style=dotted, arrowhead=normal];
+
+    // Plaintexts and Ciphertexts
+    P [label="P"];
+    P_prime [label="P'"];
+    C [label="C"];
+    C_prime [label="C'"];
+    D [label="D"];
+    D_prime [label="D'"];
+    X [label="X"];
+    X_prime [label="X'"];
+}

@@ -1,0 +1,49 @@
+Test Vector 1:
+x: 00 00 00 00
+y: 00 00 00 00
+z: 00 00 00 00
+
+Test Vector 2:
+x: 01 00 00 00
+y: 00 00 00 00
+z: 00 00 00 00
+
+Test Vector 3:
+x: 00 00 00 00
+y: 01 00 00 00
+z: 00 00 00 00
+
+Test Vector 4:
+x: 00 00 00 00
+y: 00 00 00 00
+z: 01 00 00 00
+
+Test Vector 5:
+x: FF FF FF FF
+y: FF FF FF FF
+z: FF FF FF FF
+
+Test Vector 6:
+x: 12 34 56 78
+y: 9A BC DE F0
+z: 0F ED CB A9
+
+Test Vector 7:
+x: AA 55 AA 55
+y: 55 AA 55 AA
+z: A5 5A A5 5A
+
+Test Vector 8:
+x: 83 1F 7C 4B
+y: 2D 9E 6A 05
+z: 51 BE 39 F4
+
+Test Vector 9:
+x: 77 88 99 AA
+y: BB CC DD EE
+z: 11 22 33 44
+
+Test Vector 10:
+x: 42 42 42 42
+y: 42 42 42 42
+z: 42 42 42 42
